@@ -1,0 +1,35 @@
+1 HOME
+2 HD= 1.50
+3 CH= 0.75
+4 DR= 1.25
+5   PRINT "Welcome to my Hot Dog stand!"
+10  input "What's your name? "; customer$
+15  print " "
+20  print "Welcome "; customer$; ", can I take your order?
+25  print " "
+30  print "Hot Dog  1.50"
+35  print "Chips    0.75"
+40  print "Drink    1.25"
+45  numHotDogs= 0
+50  numChips= 0
+55  numDrinks= 0
+60  print "  "
+65  input "How many hotdogs would you like?  "; numHotDogs
+70  print " "
+75  input "how many Chips would you like?    "; numChips
+80  print "  "
+85  input "How many drinks would you like?   "; numDrinks
+90  print "  "
+95  print " "
+100 print "Great! You have: " 
+105 print " "
+110 print numHotDogs "  Hot Dogs"
+115 Print numChips   "  Chips"
+120 print numDrinks  "  Drinks"
+125 print " "
+130 print "And your total is: $" ((numHotDog*HD)+(numChips*CH)+(numDrinks*DR))*1.0825 " (with tax)"
+135 print " "
+140 print "Press enter to make another order"
+145 input null  
+150 goto 1
+
